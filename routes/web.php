@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\LinkController;
+use App\Http\Controllers\UserRegisterController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,5 +16,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('register');
 });
+
+Route::post('/register', [UserRegisterController::class, 'create'])->name('user.register');
+Route::get('/link', [LinkController::class, 'index'])->name('link');
