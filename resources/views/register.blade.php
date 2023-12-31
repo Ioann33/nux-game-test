@@ -13,7 +13,7 @@
             </div>
         </div>
     @endif
-    <div class="container d-flex align-items-center justify-content-center" style="height: 100vh;">
+    <div class="container d-flex align-items-center justify-content-center" style="height: 75vh;">
         <div class="card" style="width: 18rem;">
             <div class="card-body">
                 <form method="POST" action="{{route('user.register')}}">

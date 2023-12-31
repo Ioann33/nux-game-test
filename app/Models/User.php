@@ -10,6 +10,8 @@ use Laravel\Sanctum\HasApiTokens;
 
 /**
  * @property string $date_link_token
+ * @property string $link_token
+ * @property string $username
  */
 class User extends Authenticatable
 {
