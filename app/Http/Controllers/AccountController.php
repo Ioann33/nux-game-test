@@ -30,7 +30,6 @@ class AccountController extends Controller
 
     public function update(): RedirectResponse
     {
-        /** @var User $user */
         $user = Auth::user();
         User::query()
             ->where('link_token', $user->link_token)
@@ -44,7 +43,6 @@ class AccountController extends Controller
 
     public function delete(): RedirectResponse
     {
-        /** @var User $user */
         $user = Auth::user();
         User::query()
             ->where('link_token', $user->link_token)
