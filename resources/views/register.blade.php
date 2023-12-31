@@ -26,7 +26,7 @@
                         <label for="exampleInputPassword1" class="form-label">Phone</label>
                         <input type="tel" class="form-control" id="exampleInputPassword1" name="phone">
                     </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="submit" class="btn btn-primary">Register</button>
                 </form>
             </div>
         </div>
