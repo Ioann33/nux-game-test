@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AccountController;
 use App\Http\Controllers\GameController;
+use App\Http\Controllers\HistoryController;
 use App\Http\Controllers\LinkController;
 use App\Http\Middleware\UserTokenSecure;
 use Illuminate\Support\Facades\Route;
@@ -30,6 +31,7 @@ Route::group([
 ], function () {
     Route::get('/account/{token}', [AccountController::class, 'show'])->name('account');
     Route::get('/account/{token}/game', [GameController::class, 'index'])->name('account.game');
+    Route::get('/account/{token}/history', [HistoryController::class, 'index'])->name('account.history');
     Route::get('/account/{token}/link-refresh', [AccountController::class, 'update'])->name('account.update');
     Route::delete('/account/{token}', [AccountController::class, 'delete'])->name('account.delete');
 });

@@ -7,7 +7,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item m-1">
-                            <a class="btn btn-outline-primary" href="#">History</a>
+                            <a class="btn btn-outline-primary" href="{{route('account.history', ['token' => \Illuminate\Support\Facades\Auth::user()->link_token])}}">History</a>
                         </li>
                         <li class="nav-item m-1">
                             <a class="btn btn-outline-success" href="{{route('account.update', ['token' => \Illuminate\Support\Facades\Auth::user()->link_token])}}">Refresh Link</a>
@@ -30,5 +30,5 @@
             </div>
         </nav>
     </div>
-    @yield('gameContent')
+    @yield('accountContent')
 @endsection

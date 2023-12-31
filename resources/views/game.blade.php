@@ -1,5 +1,5 @@
 @extends('account')
-@section('gameContent')
+@section('accountContent')
     <div class="container d-flex align-items-center justify-content-center" style="height: 50vh;">
         <div class="card" style="width: 30rem;">
             <div class="card-header @if($result === 'Win') bg-success @else bg-danger @endif">
